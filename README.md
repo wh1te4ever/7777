@@ -1,5 +1,5 @@
 # MacOS_remote
-MacOS Remote Desktop for Xcode &amp; testing purpose.
+MacOS Remote Desktop for Xcode &amp; for testing purpose.
 
 [![Screenshot-15.png](https://i.postimg.cc/QNJvnPxC/Screenshot-15.png)](https://postimg.cc/HjjSr6M1)
 
