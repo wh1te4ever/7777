@@ -27,6 +27,16 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 
 #install ngrok
 brew install --cask ngrok
+#install chrome
+brew install --cask google-chrome
+#install Chrome-remote-desktop
+brew install --cask chrome-remote-desktop-host
+#install microsoft-remote-desktop
+brew install --cask microsoft-remote-desktop
+#team-viewer (test)
+brew install --cask teamviewer
+
+
 
 #configure ngrok and start it
 ngrok authtoken $3
