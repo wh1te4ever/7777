@@ -28,6 +28,6 @@ MacOS Remote Desktop for Xcode &amp; for testing purpose.
     Connect with VNC Viewer
         Install VNC Viewer
         Go to: https://dashboard.ngrok.com/endpoints/status copy host(eg: 0.tcp.in.ngrok.io:13472)
-        Username: [Secrets]
+        Username: akhil
         Password: [Secrets]
     Use Chrome Remote Desktop for faster and smoother remotes
