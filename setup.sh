@@ -31,8 +31,8 @@ brew install --cask ngrok
 brew install --cask google-chrome
 #install Chrome-remote-desktop
 brew install --cask chrome-remote-desktop-host
-#install microsoft-remote-desktop
-brew install --cask microsoft-remote-desktop
+#install microsoft-remote-desktop(optional)
+#brew install --cask microsoft-remote-desktop
 #team-viewer (test)
 brew install --cask teamviewer
 
