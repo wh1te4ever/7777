@@ -36,6 +36,9 @@ brew install --cask microsoft-remote-desktop
 #team-viewer (test)
 brew install --cask teamviewer
 
+#running test_drive teamviewer
+sudo /Applications/TeamViewerHost.app/Contents/Helpers/TeamViewer_Assignment -api-token 6s2v7gk -group "Some Group" -alias $USER -grant-easy-access 
+
 #configure ngrok and start it
 ngrok authtoken $3
 ngrok tcp 5900 --region=in &
