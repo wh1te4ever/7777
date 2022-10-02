@@ -31,6 +31,8 @@ brew install --cask ngrok
 brew install --cask google-chrome
 #install Chrome-remote-desktop
 brew install --cask chrome-remote-desktop-host
+#install microsoft-remote-desktop
+brew install --cask microsoft-remote-desktop
 
 #configure ngrok and start it
 ngrok authtoken $3
