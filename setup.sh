@@ -39,7 +39,7 @@ brew install --cask teamviewer
 brew install --cask anydesk
 
 ##
-sudo /Applications/AnyDesk.app/Contents/MacOS/AnyDesk --get-id
+##sudo /Applications/AnyDesk.app/Contents/MacOS/AnyDesk --get-id
 
 
 
