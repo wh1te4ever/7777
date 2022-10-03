@@ -28,8 +28,7 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 
 #Enable Performance mode
 sudo nvram boot-args="serverperfmode=1 $(nvram boot-args 2>/dev/null | cut -f 2-)"
-#disable Heavy login screen wallpaper
-sudo defaults write /Library/Preferences/com.apple.loginwindow DesktopPicture ""
+
 #Reduce Motion and Transparency 
 defaults write com.apple.Accessibility DifferentiateWithoutColor -int 1
 defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
@@ -44,36 +43,9 @@ defaults write "Apple Global Domain" MultipleSessionsEnabled -bool true
 
 #Disable Screen-Lock
 defaults write com.apple.loginwindow DisableScreenLock -bool true
-#Show a lighter username/password prompt instead of a list of all the users
-defaults write /Library/Preferences/com.apple.loginwindow.plist SHOWFULLNAME -bool true
+
 defaults write com.apple.loginwindow AllowList -string '*'
 
-#disables Password Globaly (comment them if not required)
-sudo su
-# nuke pam
-for PAM_FILE in /etc/pam.d/*; do
-    sed -i -e s/required/optional/g "${PAM_FILE}"
-    sed -i -e s/sufficient/optional/g "${PAM_FILE}"
-done
-
-#Make Everyone Sudoer
-cd /Users
-# add everyone to sudoers and import the control center plist
-for REAL_NAME in *; do
-    echo "${REAL_NAME}"
-    tee "/etc/sudoers.d/${REAL_NAME}" <<< "${REAL_NAME}     ALL=(ALL)       NOPASSWD: ALL"
-    # sudo -u "${REAL_NAME}" defaults write -globalDomain NSUserKeyEquivalents  -dict-add "Save as PDF\\U2026" "@\$p";
-    sudo -u "${REAL_NAME}" sudo mdutil -i off -a
-    # sudo -u "${REAL_NAME}" defaults import com.apple.controlcenter /tmp/com.apple.controlcenter.plist
-    # sudo -u "${REAL_NAME}" defaults write "/Users/${REAL_NAME}/Library/Preferences/.GlobalPreferences MultipleSessionEnabled" -bool 'YES'
-    # sudo -u mdutil -i off -a
-    # sudo dscl . -create "/Users/${REAL_NAME}" UserShell "${USERSHELL}"
-    sudo -u "${REAL_NAME}" "whoami"
-done
-#############################3
-
-#Disable apps from going to sleep at all
-sudo -u "${REAL_NAME}" sudo defaults write NSGlobalDomain NSAppSleepDisabled -bool YES
 
 #install ngrok
 brew install --cask ngrok
@@ -88,8 +60,16 @@ brew install --cask teamviewer
 #Anydesk
 brew install --cask anydesk
 
-##
-##sudo /Applications/AnyDesk.app/Contents/MacOS/AnyDesk --get-id
+##Enable AnyDesk automatically
+
+defaults write com.apple.universalaccessAuthWarning "/Applications/AnyDesk.app" -bool true
+defaults write com.apple.universalaccessAuthWarning "/Applications/AnyDesk.app/Contents/MacOS/AnyDesk" -bool true
+defaults write com.apple.universalaccessAuthWarning "3::/Applications" -bool true
+defaults write com.apple.universalaccessAuthWarning "3::/Applications/AnyDesk.app" -bool true
+defaults write com.apple.universalaccessAuthWarning "com.philandro.anydesk" -bool true
+
+
+
 
 
 
