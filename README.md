@@ -30,4 +30,5 @@ MacOS Remote Desktop for Xcode &amp; for testing purpose.
         Go to: https://dashboard.ngrok.com/endpoints/status copy host(eg: 0.tcp.in.ngrok.io:13472)
         Username: akhil
         Password: [Secrets]
-    Use Chrome Remote Desktop for faster and smoother remotes
+
+* Use Team-Viewer for better lag free experience.
