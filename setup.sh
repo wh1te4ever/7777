@@ -35,6 +35,11 @@ brew install --cask chrome-remote-desktop-host
 #brew install --cask microsoft-remote-desktop
 #team-viewer (test)
 brew install --cask teamviewer
+#Anydesk
+brew install --cask anydesk
+
+##
+##sudo /Applications/AnyDesk.app/Contents/MacOS/AnyDesk --get-id
 
 
 
