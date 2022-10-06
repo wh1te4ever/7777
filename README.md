@@ -2,7 +2,7 @@
 MacOS Remote Desktop for Xcode &amp; for testing purpose.
 
 
-![<img src="https://i.ytimg.com/vi/MZYly2gmmHs/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=MZYly2gmmHs)
+[<img src="https://i.ytimg.com/vi/MZYly2gmmHs/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=MZYly2gmmHs)
 
 
 ## System Info
