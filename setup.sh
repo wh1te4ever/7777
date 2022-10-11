@@ -59,6 +59,8 @@ brew install --cask chrome-remote-desktop-host
 brew install --cask teamviewer
 #Anydesk
 brew install --cask anydesk
+#IDE
+brew  install --cask intellij-idea-ce
 
 ##Enable AnyDesk automatically
 
