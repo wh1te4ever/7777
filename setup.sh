@@ -56,6 +56,7 @@ brew install --cask teamviewer
 brew install --cask anydesk
 #IDE
 brew  install --cask intellij-idea-ce
+brew install --cask android-studio
 
 ##Enable AnyDesk automatically
 
