@@ -29,12 +29,7 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 #Enable Performance mode
 sudo nvram boot-args="serverperfmode=1 $(nvram boot-args 2>/dev/null | cut -f 2-)"
 
-#Reduce Motion and Transparency 
-defaults write com.apple.Accessibility DifferentiateWithoutColor -int 1
-defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
-defaults write com.apple.universalaccess reduceMotion -int 1
-defaults write com.apple.universalaccess reduceTransparency -int 1
-defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
+
 
 #Enable Multi-Session
 sudo /usr/bin/defaults write .GlobalPreferences MultipleSessionsEnabled -bool TRUE
@@ -64,16 +59,19 @@ brew  install --cask intellij-idea-ce
 
 ##Enable AnyDesk automatically
 
-defaults write com.apple.universalaccessAuthWarning "/Applications/AnyDesk.app" -bool true
-defaults write com.apple.universalaccessAuthWarning "/Applications/AnyDesk.app/Contents/MacOS/AnyDesk" -bool true
-defaults write com.apple.universalaccessAuthWarning "3::/Applications" -bool true
-defaults write com.apple.universalaccessAuthWarning "3::/Applications/AnyDesk.app" -bool true
-defaults write com.apple.universalaccessAuthWarning "com.philandro.anydesk" -bool true
+#defaults write com.apple.universalaccessAuthWarning "/Applications/AnyDesk.app" -bool true
+#defaults write com.apple.universalaccessAuthWarning "/Applications/AnyDesk.app/Contents/MacOS/AnyDesk" -bool true
+#defaults write com.apple.universalaccessAuthWarning "3::/Applications" -bool true
+#defaults write com.apple.universalaccessAuthWarning "3::/Applications/AnyDesk.app" -bool true
+#defaults write com.apple.universalaccessAuthWarning "com.philandro.anydesk" -bool true
 
 
-
-
-
+#Reduce Motion and Transparency 
+defaults write com.apple.Accessibility DifferentiateWithoutColor -int 1
+defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
+defaults write com.apple.universalaccess reduceMotion -int 1
+defaults write com.apple.universalaccess reduceTransparency -int 1
+defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
 
 #configure ngrok and start it
 ngrok authtoken $3
