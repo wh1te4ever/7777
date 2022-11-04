@@ -46,12 +46,9 @@ defaults write com.apple.loginwindow AllowList -string '*'
 brew install --cask ngrok
 #install chrome
 brew install --cask google-chrome
-#install Chrome-remote-desktop
-brew install --cask chrome-remote-desktop-host
-#install microsoft-remote-desktop(optional)
-#brew install --cask microsoft-remote-desktop
-#team-viewer (test)
+#install TeamViewer
 brew install --cask teamviewer
+
 
 #IDE
 brew  install --cask intellij-idea-ce
