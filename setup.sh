@@ -45,13 +45,13 @@ defaults write com.apple.loginwindow AllowList -string '*'
 #install ngrok
 brew install --cask ngrok
 #install chrome
-brew install --cask google-chrome
+#brew install --cask google-chrome
 #install TeamViewer
 brew install --cask teamviewer
 
 
 #IDE
-brew  install --cask intellij-idea-ce
+#brew  install --cask intellij-idea-ce
 #brew install --cask android-studio
 
 
