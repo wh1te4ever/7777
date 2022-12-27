@@ -48,7 +48,8 @@ brew install --cask ngrok
 #brew install --cask google-chrome
 #install TeamViewer
 brew install --cask teamviewer
-
+brew install --cask onedrive
+brew install --cask qbittorrent
 
 #IDE
 #brew  install --cask intellij-idea-ce
