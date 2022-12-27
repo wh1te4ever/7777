@@ -50,6 +50,7 @@ brew install --cask ngrok
 brew install --cask teamviewer
 brew install --cask onedrive
 brew install --cask qbittorrent
+brew install --cask firefox
 
 #IDE
 #brew  install --cask intellij-idea-ce
