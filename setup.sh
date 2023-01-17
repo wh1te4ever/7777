@@ -24,7 +24,12 @@ echo $2 | perl -we 'BEGIN { @k = unpack "C*", pack "H*", "1734516E8BA8C5E2FF1C39
 #Start VNC/reset changes
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -restart -agent -console
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate
-
+#Reduce Motion and Transparency 
+defaults write com.apple.Accessibility DifferentiateWithoutColor -int 1
+defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
+defaults write com.apple.universalaccess reduceMotion -int 1
+defaults write com.apple.universalaccess reduceTransparency -int 1
+defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
 
 #Enable Performance mode
 sudo nvram boot-args="serverperfmode=1 $(nvram boot-args 2>/dev/null | cut -f 2-)"
@@ -53,20 +58,12 @@ brew install --cask jdownloader
 brew install --cask qbittorrent
 brew install --cask firefox
 brew install --cask folx
-
-#IDE
-#brew  install --cask intellij-idea-ce
-#brew install --cask android-studio
+#brew install --cask <package_name>
 
 
 
 
-#Reduce Motion and Transparency 
-defaults write com.apple.Accessibility DifferentiateWithoutColor -int 1
-defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
-defaults write com.apple.universalaccess reduceMotion -int 1
-defaults write com.apple.universalaccess reduceTransparency -int 1
-defaults write com.apple.Accessibility ReduceMotionEnabled -int 1
+
 
 #configure ngrok and start it
 ngrok authtoken $3
