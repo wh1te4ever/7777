@@ -54,8 +54,7 @@ brew install --cask ngrok
 #install TeamViewer
 brew install --cask teamviewer
 #brew install --cask onedrive
-brew install --cask jdownloader 
-brew install --cask qbittorrent
+brew install --cask jdownloader
 brew install --cask firefox
 brew install --cask folx
 #brew install --cask <package_name>
